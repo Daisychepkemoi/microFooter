@@ -1,5 +1,5 @@
 {
-  "name": "micro-footer",
+  "name": "micro-header",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa": "ng build --prod --deploy-url /dist/micro-footer --output-hashing none",
-    "serve:single-spa": "ng serve --disable-host-check --port 4201 --deploy-url http://localhost:4201/ --live-reload false"
+    "build:single-spa": "ng build --prod --deploy-url /dist/micro-header --output-hashing none",
+    "serve:single-spa": "ng serve --host 157.230.101.123 --port 4202 --disable-host-check  --live-reload false"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +22,8 @@
     "@angular/platform-browser": "~8.1.0",
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
-    "bootstrap": "5.2.3",
+    "@ng-bootstrap/ng-bootstrap": "^5.3.0",
+    "bootstrap": "4.3.1",
     "ngx-bootstrap": "^5.3.2",
     "rxjs": "~6.4.0",
     "single-spa-angular": "^3.0.1",
